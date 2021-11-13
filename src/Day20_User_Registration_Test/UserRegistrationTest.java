@@ -22,7 +22,7 @@ public class UserRegistrationTest {
 
 	@Test
 	public void givenLastName_WhenInFormat_ShouldReturnTrue() {
-		boolean result = userRegistration.lastName("Bharathts");
+		boolean result = userRegistration.lastName("Sankajji");
 		Assert.assertEquals(true, result);
 	}
 

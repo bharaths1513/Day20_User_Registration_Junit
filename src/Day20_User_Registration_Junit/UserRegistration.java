@@ -23,7 +23,7 @@ public class UserRegistration {
 	 */
 
 	public boolean lastName(String lastName) {
-		String regex = "^[A-Z]{1}[a-z]{8}";
+		String regex = "^[A-Z]{1}[a-z]{7,}";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(lastName);
 		return matcher.matches();
