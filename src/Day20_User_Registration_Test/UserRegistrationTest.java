@@ -6,6 +6,7 @@ import org.junit.Test;
 import Day20_User_Registration_Junit.UserRegistration;
 
 public class UserRegistrationTest {
+
 	UserRegistration userRegistration = new UserRegistration();
 
 	@Test
@@ -160,5 +161,4 @@ public class UserRegistrationTest {
 		boolean result = userRegistration.emailAddressSample("aabc.@gmail.com");
 		Assert.assertEquals(false, result);
 	}
-
 }

@@ -97,8 +97,8 @@ public class UserRegistration {
 	 * method for some sample mails
 	 */
 
-	public boolean emailAddressSample(String emailId) {
-		String regex = "^[a-z0-9]{3,}+([_+-.][a-z0-9]{3,}+)*@[a-z0-9]+.[a-z]{2,3}+(.[a-z]{2,3}){0,1}$";
+	public static boolean emailAddressSample(String emailId) {
+		String regex = "^[a-zA-Z]+[a-zA-Z0-9]*[- . + _]?[a-zA-Z0-9]+[@]{1}[a-z0-9]+[.]{1}[a-z]+[.]?[a-z]+$";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(emailId);
 		return matcher.matches();
